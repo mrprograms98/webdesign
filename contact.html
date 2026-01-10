@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR-PROgrams - webdevelopment &amp; design</title>
+  <!-- Font Awesome voor social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!-- Lichtgevende bewegende cirkels -->
+<div class="animated-circles">
+  <div class="glow-circle path1"></div>
+  <div class="glow-circle path2"></div>
+  <div class="glow-circle path3"></div>
+  <div class="glow-circle path4"></div>
+  <div class="glow-circle path5"></div>
+  <div class="glow-circle path6"></div>
+</div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Scroll-progress balk -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navigatie -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">MR-PROgrams</div>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Functies
+</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Sectie -->
+  <section class="hero">
+    <div>
+      <h1>MR-PROgrams</h1>
+      <p>gespecialiseerd in webdevelopment &amp; design</p>
+      <button class="hero-btn" id="learn-more-btn">Leer meer</button>
+    </div>
+  </section>
+
+<section id="contact" class="contact">
+  <h2>Neem Contact Op</h2>
+  <p class="contact-subtitle">
+    Heb je een vraag, project of samenwerking in gedachten?  
+    Vul het formulier in en wij nemen zo snel mogelijk contact met je op.
+  </p>
+
+  <div class="contact-wrapper">
+    
+    <!-- Contactgegevens -->
+    <div class="contact-details">
+      <div class="contact-card">
+        <h3>📧 E-mail</h3>
+        <p><a href="mailto:mr-programs@outlook.com">mr-programs@outlook.com</a></p>
+      </div>
+
+      <div class="contact-card">
+        <h3>📞 Telefoon</h3>
+        <p>+31 64 080 0585</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>📍 Locatie</h3>
+        <p>Eindhoven, Noord-Brabant</p>
+      </div>
+    </div>
+
+    <!-- Contactformulier -->
+    <form class="contact-form" action="https://formspree.io/f/mpwkzjky" method="post">
+      <div class="form-group">
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" placeholder="Uw volledige naam" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mailadres</label>
+        <input type="email" id="email" name="email" placeholder="uw@email.nl" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Onderwerp</label>
+        <input type="text" id="subject" name="subject" placeholder="Waar gaat uw bericht over?" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Bericht</label>
+        <textarea id="message" name="message" rows="5" placeholder="Beschrijf uw vraag of project..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        Verstuur Bericht 🚀
+      </button>
+    </form>
+
+  </div>
+</section>
+
+
+  <!-- Contact Sectie -->
+  <section id="contact" class="contact">
+    <h2>Contacteer Ons</h2>
+    <div class="contact-info">
+      <div class="contact-card">
+        <h3>&#128231;E-mail</h3>
+        <p><a href="mailto:mr-programs@outlook.com">MR-MAIL</a></p>
+      </div>
+      <div class="contact-card">
+        <h3>&#128222;&#128241;Telefoon</h3>
+        <p>+31 64 080 0585</p>
+      </div>
+      <div class="contact-card">
+        <h3>&#128205;&#127757;Locatie</h3>
+        <p>Eindhoven, Noord-Brabant</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Sectie -->
+  <section class="parallax">
+    <img src="https://source.unsplash.com/1600x900/?city,night" alt="City at Night"><div class="map">
+      <iframe src="https://maps.google.com/maps?q=eindhoven&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MR-PROgrams | <a href="#">Privacy Policy</a></p>
+    <div class="social-links">
+      <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+      <a href="https://facebook.com" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://linkedin.com" target="_blank" class="fab fa-linkedin"></a>
+    </div>
+  </footer>
+
+  <!-- Back-to-top knop -->
+  <div id="back-to-top"><i class="fas fa-arrow-up"></i></div>
+
+  <!-- Modal voor 'Learn More' -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Meer Informatie</h2>
+      <p>Of je nu een zzp’er bent die online zichtbaar wil worden, een mkb-bedrijf dat zijn processen wil automatiseren, of een organisatie die behoefte heeft aan een professionele, schaalbare website — wij denken met je mee. Wij combineren techniek, strategie en design om digitale oplossingen te bouwen die écht werken voor jouw bedrijf.</p>
+    </div>
+  </div>
+
+<script src="/js/script.js" defer></script>
+</body>
+</html>
