@@ -12,6 +12,16 @@
       overflow-x: hidden;
       scroll-behavior: smooth;
     }
+    body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url("BG-MR.png") center center / cover no-repeat;
+  opacity: 0.25;
+  z-index: -1;
+  animation: backgroundScroll 60s linear infinite;
+}
+
     a {
       color: #00f9ff;
       text-decoration: none;
@@ -21,17 +31,6 @@
       color: #ff00ff;
     }
     
-    .animated-circles::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url("BG-MR.png") center center / cover no-repeat;
-  opacity: 0.25;
-  z-index: 1;
-  animation: backgroundScroll 60s linear infinite;
-}
-
-
 /* optionele subtiele beweging voor de gif */
 @keyframes backgroundScroll {
   0% { background-position: 0 0; }
@@ -646,5 +645,6 @@
       .hero p { font-size: 1.2em; }
       .hero-btn { font-size: 1em; }
     }
+
 
 
