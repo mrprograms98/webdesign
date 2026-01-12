@@ -10,6 +10,7 @@
       color: #fff;
       overflow-x: hidden;
       scroll-behavior: smooth;
+      background-color: #0e0e0e;
     }
     body::before {
   content: '';
@@ -644,6 +645,7 @@
       .hero p { font-size: 1.2em; }
       .hero-btn { font-size: 1em; }
     }
+
 
 
 
