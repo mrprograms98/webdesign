@@ -27,7 +27,7 @@
   inset: 0;
   background: url("BG-MR.png") center center / cover no-repeat;
   opacity: 0.25;
-  z-index: -1;
+  z-index: 1;
   animation: backgroundScroll 60s linear infinite;
 }
 
@@ -646,4 +646,5 @@
       .hero p { font-size: 1.2em; }
       .hero-btn { font-size: 1em; }
     }
+
 
