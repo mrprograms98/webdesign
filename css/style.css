@@ -25,7 +25,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url("https://www.forensischinstituut.nl/binaries/large/content/gallery/nfi/content-afbeeldingen/andere-hoofdrubrieken/over-het-nfi/over-het-nfi/samenwerking/globalization-cybercrime-prevention-1000x600.jpg") center center / cover no-repeat;
+  background: url("BG-MR.png") center center / cover no-repeat;
   opacity: 0.25;
   z-index: -1;
   animation: backgroundScroll 60s linear infinite;
@@ -646,3 +646,4 @@
       .hero p { font-size: 1.2em; }
       .hero-btn { font-size: 1em; }
     }
+
