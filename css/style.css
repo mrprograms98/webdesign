@@ -16,7 +16,7 @@
   content: '';
   position: fixed;
   inset: 0;
-  background: url("mrpro.jpg") center center / cover no-repeat;
+  background: url("../mrpro.jpg") center center / cover no-repeat;
   opacity: 0.25;
   z-index: -1;
   animation: backgroundScroll 60s linear infinite;
