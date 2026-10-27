@@ -1071,6 +1071,73 @@
       .feature-row { flex-direction: column !important; }
       .footer-bottom { flex-direction: column; text-align: center; }
     }
+    /* ==========================================================================
+   MOBIELE OPTIMALISATIE (NAVBAR & PORTAAL OVERLAY)
+   ========================================================================== */
+
+/* 1. Verberg de bedrijfsnaam/tekst in de navbar op mobiele schermen */
+@media (max-width: 768px) {
+  .logo-text {
+    display: none !important; /* Verbergt de tekst MR-PROgrams op mobiel */
+  }
+  
+  nav {
+    padding: 12px 18px !important; /* Compactere navigatiebalk op mobiel */
+  }
+
+  .nav-logo img {
+    width: 45px !important; /* Pas de grootte van het schild-logo aan */
+    height: auto;
+  }
+
+  .portal-trigger span {
+    font-size: 0.75rem !important;
+  }
+
+  .portal-trigger {
+    padding: 8px 14px !important;
+  }
+}
+
+/* 2. Maak de Portaal Overlay volledig passend en scrollbaar op mobiel */
+@media (max-width: 768px) {
+  .portal-overlay {
+    padding: 15px !important;
+  }
+
+  .portal-menu-content {
+    max-height: 85vh !important; /* Zorgt dat het menu nooit buiten het scherm valt */
+    overflow-y: auto !important;  /* Maakt het menu scrollbaar als het scherm erg klein is */
+    padding: 10px 5px !important;
+  }
+
+  .portal-links {
+    gap: 16px !important;        /* Kleinere afstand tussen de menu-items */
+    margin-bottom: 25px !important;
+  }
+
+  .portal-links a {
+    font-size: 1.3rem !important; /* Kleinere, goed leesbare tekst op telefoons */
+    letter-spacing: 2px !important;
+  }
+
+  .cyber-radar-ring {
+    width: 320px !important;     /* Kleiner achtergrondeffect op mobiel */
+    height: 320px !important;
+  }
+
+  .portal-close {
+    top: 20px !important;
+    right: 20px !important;
+    font-size: 1.8rem !important; /* Sluitknop beter bereikbaar op mobiel */
+  }
+
+  .social-btn {
+    width: 48px !important;      /* Aangepast formaat voor social media knoppen */
+    height: 48px !important;
+    font-size: 1.2rem !important;
+  }
+}
   </style>
 </head>
 <body>
@@ -1110,27 +1177,27 @@
     <div class="preloader-counter" id="loaderVal">0%</div>
   </div>
 
-  <!-- NAVIGATIE -->
-  <nav>
-    <a href="#" class="nav-logo">
-      <img src="shield.png" width="100">
-      >MR-PRO<span>grams</span>
-    </a>
+<!-- NAVIGATIE MET GEOPTIMALISEERDE LOGO TEXT KLASSE -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="shield.png" width="60" alt="MR-PROgrams Shield">
+    <span class="logo-text">MR-PRO<span>grams</span></span>
+  </a>
 
-    <!-- DESKTOP OPTIES -->
-    <ul class="desktop-nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#webdesign">Webdesign & SEO</a></li>
-      <li><a href="#in-uitklok">In & Uitkloksystemen</a></li>
-      <li><a href="#partners">Partners</a></li>
-      <li><a href="#offerte">Gratis Demo</a></li>
-    </ul>
+  <!-- DESKTOP OPTIES -->
+  <ul class="desktop-nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#webdesign">Webdesign & SEO</a></li>
+    <li><a href="#in-uitklok">In & Uitkloksystemen</a></li>
+    <li><a href="#partners">Partners</a></li>
+    <li><a href="#offerte">Gratis Demo</a></li>
+  </ul>
 
-    <div class="portal-trigger" id="portal-open">
-      <span>Menu Portaal</span>
-      <i class="fa-solid fa-compass"></i>
-    </div>
-  </nav>
+  <div class="portal-trigger" id="portal-open">
+    <span>Menu Portaal</span>
+    <i class="fa-solid fa-compass"></i>
+  </div>
+</nav>
 
   <!-- SPECTACULAIR PORTAAL OVERLAY MENU -->
   <div class="portal-overlay" id="portal-menu">
